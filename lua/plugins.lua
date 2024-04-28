@@ -2,13 +2,6 @@
 require('packer').startup(function()
   use 'wbthomason/packer.nvim'
   use { "catppuccin/nvim", as = "catppuccin" }
-  use {
-    'goolord/alpha-nvim',
-    requires = { 'nvim-tree/nvim-web-devicons' },
-    config = function ()
-        require'alpha'.setup(require'alpha.themes.startify'.config)
-    end
-  }
   use "cdelledonne/vim-cmake"
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
@@ -18,5 +11,11 @@ require('packer').startup(function()
   use 'nvim-treesitter/nvim-treesitter'
   use "williamboman/mason.nvim"
   use "neovim/nvim-lspconfig"
+  use {
+  'nvim-tree/nvim-tree.lua',
+  requires = {
+    'nvim-tree/nvim-web-devicons', -- optional
+  },
+  }
 end)
 

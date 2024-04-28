@@ -10,8 +10,6 @@ keymap('n', '<c-k>', '<c-w>k', opts)
 keymap('n', '<c-l>', '<c-w>l', opts)
 
 
-keymap('n', '<c-n>', ':Alpha<CR>', opts)
-
 local function nkeymap(hotkey, cmd)
     keymap('n', hotkey, cmd, opts)
 end
