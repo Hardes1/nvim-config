@@ -14,35 +14,7 @@ indent = {
 }
 }
 
-
-local lsp_installer = require("nvim-lsp-installer")
-lsp_installer.on_server_ready(function(server)
-  local opts = {}
-  if server.name == "sumneko_lua" then
-    opts = {
-      settings = {
-        Lua = {
-          diagnostics = {
-            globals = { 'vim', 'use' }
-          },
-          --workspace = {
-            -- Make the server aware of Neovim runtime files
-            --library = {[vim.fn.expand('$VIMRUNTIME/lua')] = true, [vim.fn.expand('$VIMRUNTIME/lua/vim/lsp')] = true}
-          --}
-        }
-      }
-    }
-  end
-  server:setup(opts)
-end)
-
-
-local function foo()
-  print "hello world!"
-end
-
-
-foo()
+require("mason").setup()
 
 local cmp = require'cmp'
 
@@ -96,8 +68,7 @@ cmp.setup.filetype('gitcommit', {
     matching = { disallow_symbol_nonprefix_matching = false }
   })
 
-  -- Set up lspconfig.
-  local capabilities = require('cmp_nvim_lsp').default_capabilities()
-  require('lspconfig')['sumneko_lua'].setup {
-    capabilities = capabilities
-  }
+
+require('lspconfig')["clangd"].setup{
+  on_attach = on_attach
+}
