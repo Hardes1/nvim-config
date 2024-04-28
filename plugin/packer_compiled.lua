@@ -134,6 +134,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/hardes1/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  ["vim-cmake"] = {
+    loaded = true,
+    path = "/Users/hardes1/.local/share/nvim/site/pack/packer/start/vim-cmake",
+    url = "https://github.com/cdelledonne/vim-cmake"
   }
 }
 

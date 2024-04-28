@@ -9,6 +9,7 @@ require('packer').startup(function()
         require'alpha'.setup(require'alpha.themes.startify'.config)
     end
   }
+  use "cdelledonne/vim-cmake"
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path'
