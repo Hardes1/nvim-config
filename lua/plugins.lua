@@ -1,8 +1,7 @@
 
 require('packer').startup(function()
-  
   use 'wbthomason/packer.nvim'
-  use 'tomasr/molokai'
+  use { "catppuccin/nvim", as = "catppuccin" }
   use {
     'goolord/alpha-nvim',
     requires = { 'nvim-tree/nvim-web-devicons' },

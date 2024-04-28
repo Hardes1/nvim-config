@@ -80,6 +80,11 @@ _G.packer_plugins = {
     path = "/Users/hardes1/.local/share/nvim/site/pack/packer/start/alpha-nvim",
     url = "https://github.com/goolord/alpha-nvim"
   },
+  catppuccin = {
+    loaded = true,
+    path = "/Users/hardes1/.local/share/nvim/site/pack/packer/start/catppuccin",
+    url = "https://github.com/catppuccin/nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/hardes1/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -104,11 +109,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/hardes1/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
-  },
-  molokai = {
-    loaded = true,
-    path = "/Users/hardes1/.local/share/nvim/site/pack/packer/start/molokai",
-    url = "https://github.com/tomasr/molokai"
   },
   ["nvim-cmp"] = {
     loaded = true,
