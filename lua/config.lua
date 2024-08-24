@@ -11,4 +11,4 @@ vim.opt.expandtab = true -- Use spaces instead of tabs
 
 vim.api.nvim_set_option("clipboard", "unnamed")
 
-vim.cmd "colorscheme catppuccin"
+vim.cmd("colorscheme catppuccin")
