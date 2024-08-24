@@ -15,7 +15,7 @@ local function nkeymap(hotkey, cmd)
 end
 
 
-
+nkeymap('<c-o>', ':NERDTreeToggle<CR>')
 
 
 
