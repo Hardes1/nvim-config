@@ -16,5 +16,6 @@ require('packer').startup(function()
   "nvim-lualine/lualine.nvim",
   requires = { "nvim-tree/nvim-web-devicons", opt = true }
   }
+  use {"akinsho/toggleterm.nvim", tag = '*'}
 end)
 

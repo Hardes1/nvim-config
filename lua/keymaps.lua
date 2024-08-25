@@ -16,5 +16,5 @@ end
 
 nkeymap('<c-o>', ':NERDTreeToggle<CR>')
 
-
+nkeymap('<c-t>', ':ToggleTerm<CR>')
 
