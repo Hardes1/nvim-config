@@ -14,7 +14,7 @@ local function nkeymap(hotkey, cmd)
     keymap('n', hotkey, cmd, opts)
 end
 
-nkeymap('<c-o>', ':NERDTreeToggle<CR>')
+nkeymap('<c-y>', ':NERDTreeToggle<CR>')
 
 nkeymap('<c-t>', ':ToggleTerm<CR>')
 

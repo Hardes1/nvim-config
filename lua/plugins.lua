@@ -5,6 +5,17 @@ require('packer').startup(function()
   use 'nvim-treesitter/nvim-treesitter'
   use "williamboman/mason.nvim"
   use "neovim/nvim-lspconfig"
+  use {
+  'hrsh7th/nvim-cmp', -- Completion plugin
+  requires = {
+    'hrsh7th/cmp-nvim-lsp', -- LSP source for nvim-cmp
+    'hrsh7th/cmp-buffer', -- Buffer source for nvim-cmp
+    'hrsh7th/cmp-path', -- Path source for nvim-cmp
+    'hrsh7th/cmp-cmdline', -- Cmdline source for nvim-cmp
+    'L3MON4D3/LuaSnip', -- Snippet engine
+    'saadparwaiz1/cmp_luasnip', -- Snippet source for nvim-cmp
+  }
+  }
   use "preservim/nerdtree"
   use "ryanoasis/vim-devicons"
   use {
