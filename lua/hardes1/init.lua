@@ -4,4 +4,5 @@ require('hardes1.keymaps')
 require('hardes1.lsp')
 require('hardes1.line')
 require('hardes1.telescope')
-
+require('hardes1.dap')
+require('hardes1.rustaceanvim')
