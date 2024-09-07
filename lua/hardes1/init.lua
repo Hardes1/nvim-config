@@ -1,0 +1,7 @@
+require('hardes1.plugins')
+require('hardes1.config')
+require('hardes1.keymaps')
+require('hardes1.lsp')
+require('hardes1.line')
+require('hardes1.telescope')
+

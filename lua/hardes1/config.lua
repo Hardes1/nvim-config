@@ -1,4 +1,4 @@
-require('plugins')
+
 
 local o = vim.o
 local bo = vim.bo

@@ -1,5 +1,5 @@
 local keymap = vim.api.nvim_set_keymap
-
+vim.g.mapleader = " "
 
 -- saving docs
 keymap('n', '<c-s>', ':w<CR>', {})
@@ -21,7 +21,4 @@ end
 
 -- enable nerd tree
 nkeymap('<c-y>', ':NERDTreeToggle<CR>')
-
--- switch terminal
-nkeymap('<c-t>', ':ToggleTerm<CR>')
 

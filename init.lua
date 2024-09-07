@@ -1,7 +1,1 @@
-require('config')
-require('plugins')
-require('keymaps')
-require('lsp')
-require('line')
-require('terminal')
-require('telescope')
+require('hardes1')
