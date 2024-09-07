@@ -6,7 +6,7 @@ require("mason").setup()
 local configs = require'nvim-treesitter.configs'
 
 configs.setup {
-ensure_installed = { "cpp", "rust", "kotlin", "java", "c", "lua", "vim", "vimdoc", "query" },
+ensure_installed = { "cpp", "rust", "c", "lua"},
 highlight = { -- enable highlighting
   enable = true,
 },
