@@ -8,7 +8,7 @@ vim.g.rustaceanvim = {
        vim.keymap.set("n", "<c-D>", function() vim.cmd.RustLsp('debuggables') end,{ silent = true, buffer = bufnr })
        vim.keymap.set('n','gD','<cmd>lua vim.lsp.buf.declaration()<CR>')
        vim.keymap.set('n','gd','<cmd>lua vim.lsp.buf.definition()<CR>')
-       vim.keymap.set('n','k','<cmd>lua vim.lsp.buf.hover()<CR>')
+       vim.keymap.set('n','<leader>k','<cmd>lua vim.lsp.buf.hover()<CR>')
        vim.keymap.set('n','gr','<cmd>lua vim.lsp.buf.references()<CR>')
        vim.keymap.set('n','gs','<cmd>lua vim.lsp.buf.signature_help()<CR>')
        vim.keymap.set('n','gi','<cmd>lua vim.lsp.buf.implementation()<CR>')
