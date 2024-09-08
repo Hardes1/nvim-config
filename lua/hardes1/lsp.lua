@@ -15,6 +15,34 @@ indent = {
 }
 }
 
+local lspconfig = require('lspconfig')
+
+-- Lua LSP setup
+lspconfig.lua_ls.setup {
+  settings = {
+    Lua = {
+      runtime = {
+        -- LuaJIT in the case of Neovim
+        version = 'LuaJIT',
+        path = vim.split(package.path, ';'),
+      },
+      diagnostics = {
+        -- Recognize the `vim` global
+        globals = {'vim'},
+      },
+      workspace = {
+        -- Make the server aware of Neovim runtime files
+        library = {
+          [vim.fn.expand('$VIMRUNTIME/lua')] = true,
+          [vim.fn.stdpath('config') .. '/lua'] = true,
+        },
+      },
+      telemetry = {
+        enable = false,
+      },
+    },
+  },
+}
 
 
 local cmp = require('cmp')
