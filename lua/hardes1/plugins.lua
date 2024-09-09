@@ -21,7 +21,7 @@ require('packer').startup(function()
   use {
   'nvim-telescope/telescope.nvim', tag = '0.1.6',
 -- or                            , branch = '0.1.x',
-  requires = { {'nvim-lua/plenary.nvim'} }
+  requires = { 'nvim-lua/plenary.nvim', 'nvim-telescope/telescope-ui-select.nvim'}
   }
   use {
   "nvim-lualine/lualine.nvim",
