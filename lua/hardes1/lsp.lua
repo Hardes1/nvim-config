@@ -6,7 +6,7 @@ require("mason").setup()
 local configs = require'nvim-treesitter.configs'
 
 configs.setup {
-ensure_installed = { "cpp", "rust", "c", "lua"},
+ensure_installed = { "cpp", "rust", "c", "lua", "asm"},
 highlight = { -- enable highlighting
   enable = true,
 },
@@ -48,7 +48,7 @@ lspconfig.lua_ls.setup {
   },
 }
 
-
+lspconfig.asm_lsp.setup {}
 local cmp = require('cmp')
 cmp.setup({
   mapping = cmp.mapping.preset.insert({
