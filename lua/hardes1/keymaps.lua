@@ -3,7 +3,7 @@ vim.g.mapleader = " "
 
 -- saving docs
 keymap('n', '<c-s>', ':w<CR>', {})
-keymap('n', '<c-s-q>', ':q!<CR>', {})
+keymap('n', '<c-S-q>', ':q!<CR>', {})
 keymap('n', '<c-q>', ':q<CR>', {})
 local opts = { noremap = true }
 

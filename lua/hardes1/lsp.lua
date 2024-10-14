@@ -19,7 +19,6 @@ local lspconfig = require('lspconfig')
 
 
 
-
 -- Lua LSP setup
 lspconfig.lua_ls.setup {
   on_attach = require('hardes1.lsp_bindings'),
@@ -48,7 +47,6 @@ lspconfig.lua_ls.setup {
   },
 }
 
-lspconfig.asm_lsp.setup {}
 local cmp = require('cmp')
 cmp.setup({
   mapping = cmp.mapping.preset.insert({
