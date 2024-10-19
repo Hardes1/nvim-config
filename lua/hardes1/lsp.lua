@@ -17,7 +17,11 @@ indent = {
 
 local lspconfig = require('lspconfig')
 
-
+lspconfig.clangd.setup {
+  on_attach = require('hardes1.lsp_bindings'),
+  filetypes = { "c", "cpp", "objc", "objcpp" },
+  single_file_support = true
+}
 
 
 -- Lua LSP setup
